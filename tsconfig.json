@@ -12,8 +12,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "baseUrl": "./",
+    // "paths": {
+    //   "Config/*": ["src/config/*"],
+    //   "Components/*": ["src/components/*"],
+    //   "Ducks/*": ["src/ducks/*"],
+    //   "Shared/*": ["src/shared/*"],
+    //   "App/*": ["src/*"]
+    // }
   },
+  "exclude": [
+    "node_modules", "dist"
+  ],
   "include": [
     "src"
   ]
