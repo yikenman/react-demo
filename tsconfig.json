@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "es2015", "es2016"
-    ],
+    "lib": ["es2015", "dom"],
     "allowJs": true,
     "skipLibCheck": false,
     "esModuleInterop": true,
@@ -17,7 +15,7 @@
     "noEmit": true,
     "jsx": "preserve",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": true
     // "baseUrl": "./",
     // "paths": {
     //   "Config/*": ["src/config/*"],
@@ -27,10 +25,6 @@
     //   "App/*": ["src/*"]
     // }
   },
-  "exclude": [
-    "node_modules", "dist"
-  ],
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
 }
