@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
+import "./polyfills";
 import "./index.css";
-import { withProiders, useProvider } from "./react-diNg";
+import { useProvider, withProiders } from "./react-diNg";
 import { TimerService } from "./index.service";
 
 const App = withProiders([TimerService])(() => {
+  const timeService = useProvider<TimerService>(TimerService);
+  useEffect(() => {
+    console.log(timeService.aaa);
+  });
   return <div>aaaa</div>;
 });
 

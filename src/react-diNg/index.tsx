@@ -1,6 +1,5 @@
-import "reflect-metadata";
+import { Provider, ReflectiveInjector } from "injection-js";
 import React, { createContext, FunctionComponent, useContext } from "react";
-import { ReflectiveInjector, Provider } from "injection-js";
 
 const initProviders = ReflectiveInjector.resolve([]);
 const initInjector = ReflectiveInjector.fromResolvedProviders(initProviders);
