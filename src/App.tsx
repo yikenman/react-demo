@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useProvider, withProviders, WithProviders } from "./react-diNg";
+import { useProvider, withProviders } from "./react-diNg";
 import { TimerService } from "./index.service";
 import "./App.css";
 
@@ -7,7 +7,6 @@ interface IChildProps {
   title: string;
   color?: string;
 }
-
 const Child: React.FunctionComponent<IChildProps> = props => {
     const [counts, updateCounts] = useState(0);
     const timeService = useProvider(TimerService);

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@abraham/reflection@^0.4.2":
+  version "0.4.2"
+  resolved "http://r.cnpmjs.org/@abraham/reflection/download/@abraham/reflection-0.4.2.tgz#c2b292325986cdcb07ae95cca1a4215650974872"
+  integrity sha1-wrKSMlmGzcsHrpXMoaQhVlCXSHI=
+
 "@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
@@ -7910,11 +7915,6 @@ recursive-readdir@2.2.2:
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
   dependencies:
     minimatch "3.0.4"
-
-reflect-metadata@^0.1.12:
-  version "0.1.12"
-  resolved "http://r.cnpmjs.org/reflect-metadata/download/reflect-metadata-0.1.12.tgz#311bf0c6b63cd782f228a81abe146a2bfa9c56f2"
-  integrity sha1-MRvwxrY814LyKKgavhRqK/qcVvI=
 
 regenerate-unicode-properties@^7.0.0:
   version "7.0.0"

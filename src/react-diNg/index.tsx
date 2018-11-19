@@ -1,4 +1,8 @@
-import { Provider, ReflectiveInjector } from "injection-js";
+import {
+  Provider,
+  ReflectiveInjector,
+  ResolvedReflectiveProvider
+} from "injection-js";
 import React, { createContext, FunctionComponent, useContext } from "react";
 
 type Constructor<T = any> = new (...args: any[]) => T;
@@ -6,9 +10,13 @@ type Constructor<T = any> = new (...args: any[]) => T;
 const initProviders = ReflectiveInjector.resolve([]);
 const initInjector = ReflectiveInjector.fromResolvedProviders(initProviders);
 const Context = createContext(initInjector);
+const resolveProviderStore: { [x: string]: ResolvedReflectiveProvider } = {};
 
 export function withProviders<P>(providers: Provider[] = []) {
   return (Component: FunctionComponent<P>): FunctionComponent<P> => {
+    if (!providers || !providers.length) {
+      return Component;
+    }
     return (props: P) => {
       const parentInjector = useContext(Context);
       const injector = parentInjector.resolveAndCreateChild(providers);

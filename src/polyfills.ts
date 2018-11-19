@@ -1,1 +1,2 @@
-import "reflect-metadata";
+// enable Reflect.metadata
+import "@abraham/reflection";

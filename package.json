@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@abraham/reflection": "^0.4.2",
     "@types/jest": "23.3.9",
     "@types/node": "10.12.6",
     "@types/react": "16.7.3",
@@ -11,7 +12,6 @@
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "react-scripts": "2.1.1",
-    "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3",
     "typescript": "3.1.6"
   },
