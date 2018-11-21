@@ -35,7 +35,7 @@ export const App = withProviders([TimerService])(() => {
   const [title, updateTitle] = useState(`2`);
 
   const onClick = () => {
-    updateTitle(+title+1+'')
+    updateTitle(`2`)
   }
 
   return (
