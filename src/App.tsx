@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useProvider, withProviders } from "./react-diNg";
+import { useProvider, withProviders } from "./react-hidi";
 import { TimerService } from "./index.service";
 import "./App.css";
 
